@@ -39,8 +39,8 @@ spec:
   # connection fact (org-id template) surfaced straight to Terraform. The
   # SUPABASE_ORG_ID CI secret and its TF_VAR mapping are retired.
   secretEnv:
-    SUPABASE_ACCESS_TOKEN: "secret://ai-chatbot/ai-chatbot/{{ .environment }}/SUPABASE_ACCESS_TOKEN"
-    TF_VAR_supabaseOrgId: "secret://ai-chatbot/ai-chatbot/{{ .environment }}/SUPABASE_ORG_ID"
+    SUPABASE_ACCESS_TOKEN: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/{{ .environment }}/SUPABASE_ACCESS_TOKEN"
+    TF_VAR_supabaseOrgId: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/{{ .environment }}/SUPABASE_ORG_ID"
 
   subscribe:
     environments:

@@ -31,11 +31,11 @@ spec:
   # level because plan-only lanes refresh against the live Cloudflare API
   # too, not just apply.
   secretEnv:
-    CLOUDFLARE_API_TOKEN: "secret://ai-chatbot/ai-chatbot/{{ .environment }}/CLOUDFLARE_R2_TOKEN"
+    CLOUDFLARE_API_TOKEN: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/{{ .environment }}/CLOUDFLARE_R2_TOKEN"
     # Non-secret connection fact (account-id template) — replaces the ambient
     # CLOUDFLARE_ACCOUNT_ID / TF_VAR_cloudflare_account_id CI values.
-    CLOUDFLARE_ACCOUNT_ID: "secret://ai-chatbot/ai-chatbot/{{ .environment }}/CLOUDFLARE_ACCOUNT_ID"
-    TF_VAR_cloudflare_account_id: "secret://ai-chatbot/ai-chatbot/{{ .environment }}/CLOUDFLARE_ACCOUNT_ID"
+    CLOUDFLARE_ACCOUNT_ID: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/{{ .environment }}/CLOUDFLARE_ACCOUNT_ID"
+    TF_VAR_cloudflare_account_id: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/{{ .environment }}/CLOUDFLARE_ACCOUNT_ID"
 
   subscribe:
     environments:

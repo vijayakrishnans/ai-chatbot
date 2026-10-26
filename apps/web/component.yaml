@@ -47,10 +47,10 @@ spec:
   # binding, and the session key is one the database generated unless an
   # owner sets AUTH_SECRET as a Worker secret (README).
   secretEnv:
-    WIRING_CLOUDFLARE_HYPERDRIVE_STAGE: "secret://ai-chatbot/ai-chatbot/stage/WIRING_CLOUDFLARE_HYPERDRIVE"
-    WIRING_CLOUDFLARE_HYPERDRIVE_PROD: "secret://ai-chatbot/ai-chatbot/prod/WIRING_CLOUDFLARE_HYPERDRIVE"
-    WIRING_CLOUDFLARE_R2_STAGE: "secret://ai-chatbot/ai-chatbot/stage/WIRING_CLOUDFLARE_R2"
-    WIRING_CLOUDFLARE_R2_PROD: "secret://ai-chatbot/ai-chatbot/prod/WIRING_CLOUDFLARE_R2"
+    WIRING_CLOUDFLARE_HYPERDRIVE_STAGE: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/stage/WIRING_CLOUDFLARE_HYPERDRIVE"
+    WIRING_CLOUDFLARE_HYPERDRIVE_PROD: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/prod/WIRING_CLOUDFLARE_HYPERDRIVE"
+    WIRING_CLOUDFLARE_R2_STAGE: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/stage/WIRING_CLOUDFLARE_R2"
+    WIRING_CLOUDFLARE_R2_PROD: "secret://org_269510fca1b34bdd82e5ebf19edcaea3/ai-chatbot/prod/WIRING_CLOUDFLARE_R2"
   subscribe:
     environments:
       - name: dev
